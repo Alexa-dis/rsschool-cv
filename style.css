@@ -51,7 +51,7 @@ a {
   background: #76cdd8;
   position: relative;
   min-width: 225px;
-  height: 1125px;
+  padding-bottom: 75px;
 }
 
 .cv_profile {
@@ -138,12 +138,14 @@ a {
 .projects_gallery {
   display: flex;
   justify-content: space-between;
-  width: 800px;
+  flex-wrap: wrap;
+  max-width: 800px;
   margin-bottom: 20px;
 }
 
 .project_item {
   display: block;
+  margin-bottom: 30px;
 }
 
 .project_item img {
@@ -157,7 +159,7 @@ a {
   transition: 0.5s ease-in-out;
 }
 
-.project_item p {
+.progect-desc {
   text-transform: none;
   max-width: 350px;
   font-size: 17px;
@@ -242,22 +244,53 @@ mark {
   background: #e4e4e4;
 }
 
+.progect-tools{
+  color: #8a8a8a;
+  font-size: 15px;
+}
+
+.pr-spacer{
+  display: none;
+}
+
+.codewars{
+  width: 100%;
+  margin-top: 10px;
+}
+
 @media (max-width: 770px) {
+  .progects {
+    margin: 0 20px;
+  }
+  .pr-spacer{
+    width: 10px;
+  }
   .cv_left {
     width: 100%;
+    padding-bottom: 15px;
   }
-
+  header {
+    display: flex;
+  }
   .cv_profile {
-    width: 60%;
-    min-width: 320px;
+    margin: auto;
+    max-width: 320px;
   }
 
   .cv_content {
     padding: 5px 10px;
+    text-align: center;
   }
 
   .cv_right {
-    padding: 5px 10px;
+    padding: 5px 20px;
     width: 100%;
   }
+  nav {
+    display: none;
+  }
+  .projects_gallery{
+    justify-content:space-around;
+  }
 }
+

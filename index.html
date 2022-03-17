@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Alexandra Safonava</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/woman.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -18,7 +19,7 @@
                 <div class="cv_content">
                     <section class="cv_item">
                         <h1>Alexandra Safonava</h1>
-                        <p class="regular">Junior Frontend Developer</p>
+                        <p class="regular">Frontend Developer</p>
                         <h3 class="adress"> Lithuania, Vilnius </h3>
                     </section>
                     <section class="cv_item">
@@ -26,7 +27,7 @@
                         <ul>
                             <li class="regular"> <img src="./imgs/phone.png" alt="phone icon"> + 370 (645) 73 858</li>
                             <li class="regular"> <img src="./imgs/gmail.png" alt="mail icon"> alexa-09@bk.ru</li>
-                            <li class="regular"> <img src="./imgs/github.png" alt="github icon"> Alexa-dis</li>
+                            <li class="regular"> <a href="https://github.com/Alexa-dis"><img src="./imgs/github.png" alt="github icon"> Alexa-dis</a></li>
                         </ul>
                     </section>
                     <section class="cv_item">
@@ -34,7 +35,7 @@
                         <ul>
                             <li class="regular"> <img src="./imgs/icon-html-5.png" alt="phone icon"> HTML </li>
                             <li class="regular"> <img src="./imgs/icon-css.png" alt="phone icon"> CSS </li>
-                            <li class="regular"> <img src="./imgs/icon-javascript.png" alt="phone icon"> JavaScript Basics </li>
+                            <li class="regular"> <img src="./imgs/icon-javascript.png" alt="phone icon"> JavaScript</li>
                             <li class="regular"> <img src="./imgs/icon-commit-git.png" alt="phone icon"> Git, GitHub </li>
                             <li class="regular"> <img src="./imgs/icon-adobe-photoshop.png" alt="phone icon"> Adobe Photoshop </li>
                             <li class="regular"> <img src="./imgs/figma.png" alt="phone icon"> Figma </li>
@@ -43,9 +44,9 @@
                     <div class="cv_item">
                         <h2 class="right_title">languages:</h2>
                         <ul>
-                            <li class="regular"> <img src="./imgs/icon-united-kingdom.png" alt="phone icon"> <b>English:</b> C1 (Advanced) </li>
-                            <li class="regular"> <img src="./imgs/icon-german.png" alt="phone icon"> <b>German:</b> B1 (Intermediate) </li>
-                            <li class="regular"> <img src="./imgs/icon-russia.png" alt="phone icon"> <b>Russian:</b> Native </li>
+                            <li class="regular"> <img src="./imgs/icon-united-kingdom.png" alt="en"> <b>English:</b> C1 (Advanced) </li>
+                            <li class="regular"> <img src="./imgs/icon-german.png" alt="ge"> <b>German:</b> B1 (Intermediate) </li>
+                            <li class="regular"> <img src="./imgs/icon-russia.png" alt="ru"> <b>Russian:</b> Native </li>
                         </ul>
                     </div>
                 </div>
@@ -75,7 +76,7 @@
                 <section class="cv_item">
                     <div class="title_arrea">
                         <img class="title_img" src="./imgs/open-book.png" alt="Education">
-                       <h2 class="right_title" id="Education">Education:</h2> 
+                        <h2 class="right_title" id="Education">Education:</h2> 
                     </div>
                     
                     <div class="title_underline"></div>
@@ -117,8 +118,8 @@
 
                 <section class="cv_item">
                     <div class="title_arrea">
-                       <img class="title_img" src="./imgs/folders.png" alt="Code example">
-                       <h2 class="right_title" id="Code">Code example:</h2> 
+                        <img class="title_img" src="./imgs/folders.png" alt="Code example">
+                        <h2 class="right_title" id="Code">Code example:</h2> 
                     </div>
                     
                     <div class="code_ex_arrea">
@@ -144,11 +145,14 @@
                             </code>
                         </div>
                     </div>
+                    <div class="codewars">
+                        <img src="https://www.codewars.com/users/Alexa-dis/badges/large" alt="codewars" class="codewars">
+                    </div>
                 </section>
                 
             </aside>
 
-            <section class="cv_item">
+            <section class="cv_item progects">
                 <div class="title_arrea">
                     <img class="title_img" src="./imgs/invention.png" alt="Projects">
                     <h2 class="right_title" id="Projects">Projects:</h2>
@@ -157,19 +161,76 @@
                 <div class="title_underline"></div>
 
                 <div class="projects_gallery">
+                    <div class="pr-spacer"></div>
                     <div class="project_item">
                         <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFE2021Q3/museum-dom/" target="_blank" >
-                            <img src="./imgs/Welcome_to_the_louvre.jpg" alt="">
+                            <img src="./imgs/Welcome_to_the_louvre.jpg" alt="Welcome_to_the_louvre">
+                            <p class="progect-tools">HTML CSS JS</p>
                             <h4>Louvre museum</h4>
-                            <p>A landing page for famous museum. The project that introduced me to adaptive and JS.</p>
+                            <p class="progect-desc">A responsive landing page for famous museum with infinite slider and image comparison slider</p>
                         </a>
                     </div>
-                    <div class="project_line"></div>
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFEPRESCHOOL/portfolio/" target="_blank" >
+                            <img src="./imgs/portfolio.jpg" alt="portfolio">
+                            <p class="progect-tools">HTML CSS JS</p>
+                            <h4>Portfolio</h4>
+                            <p class="progect-desc">Photographer's portfolio landing page with an adaptive burger menu, page translation into two languages, the ability to switch light and dark themes</p>
+                        </a>
+                    </div> 
+                    <div class="pr-spacer"></div>
                     <div class="project_item">
                         <a href="https://alexa-dis.github.io/cssMemSlider/cssMemSlider/index.html" target="_blank" >
-                            <img src="./imgs/mem_slider.jpg" alt="">
+                            <img src="./imgs/mem_slider.jpg" alt="mem_slider">
+                            <p class="progect-tools">HTML CSS</p>
                             <h4>Mem slider</h4>
-                            <p>A small slider of funny pictures using only CSS.</p>
+                            <p class="progect-desc">A small slider of funny pictures using only CSS.</p>
+                        </a>
+                    </div>  
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFEPRESCHOOL/js30/" target="_blank" >
+                            <img src="./imgs/nature.jpg" alt="portfolio">
+                            <p class="progect-tools">HTML CSS JS</p>
+                            <h4>Sounds of nature</h4>
+                            <p class="progect-desc">The application in which, when clicking on interactive elements, you can switch the image and sound</p>
+                        </a>
+                    </div>  
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFEPRESCHOOL/random-jokes/" target="_blank" >
+                            <img src="./imgs/jokes.jpg" alt="jokes">
+                            <p class="progect-tools">HTML CSS JS</p>
+                            <h4>Random jokes</h4>
+                            <p class="progect-desc">The application in which, when a button is clicked, a random quote received from the API is displayed.</p>
+                        </a>
+                    </div>  
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFEPRESCHOOL/tic-tac-toe/" target="_blank" >
+                            <img src="./imgs/tic-tac-toe.jpg" alt="tic-tac-toe">
+                            <p class="progect-tools">HTML CSS JS</p>
+                            <h4>TIC TAC TOE</h4>
+                            <p class="progect-desc">Famous tic tac toe game on a square field 3 by 3 cells.</p>
+                        </a>
+                    </div>  
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFELT/webdev/" target="_blank" >
+                            <img src="./imgs/webdev.jpg" alt="webdev">
+                            <p class="progect-tools">HTML CSS</p>
+                            <h4>webdev</h4>
+                            <p class="progect-desc">The simple web page, according to functional requirements.</p>
+                        </a>
+                    </div>  
+                    <div class="pr-spacer"></div>
+                    <div class="project_item">
+                        <a href="https://rolling-scopes-school.github.io/alexa-dis-JSFELT/theyalow/" target="_blank" >
+                            <img src="./imgs/theyalow.jpg" alt="theyalow">
+                            <p class="progect-tools">HTML CSS</p>
+                            <h4>theyalow</h4>
+                            <p class="progect-desc">The colorful responsive web page, according to requirements.</p>
                         </a>
                     </div>  
                 </div>
@@ -191,6 +252,5 @@
         </div>
         
     </footer>
-   
 </body>
 </html>
