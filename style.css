@@ -263,7 +263,8 @@ mark {
 .burger:hover{
   cursor: pointer;
 }
-.line{
+
+.line1 ,.line2, .line3 {
   width: 40px;
   height: 4px;
   background-color: #000;
@@ -274,16 +275,33 @@ mark {
 
 @media (max-width: 770px) {
   .burger{
+    margin: 20px;
     display: block;
   }
+  .burger.open {
+    position: relative;
+    left: 55px;
+  }
+  .burger.open .line1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .burger.open .line2 {
+    opacity: 0;
+  }
+  
+  .burger.open .line3 {
+    transform: rotate(45deg) translate(-12px, -7px);
+  }
+
   .header_nav{
     position: absolute;
-    top: 10px;
+    top: 0;
     right: 10px;
-    height: 100vh;
     max-width: 700px;
     background-color: #76cdd8;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .progects {
@@ -313,7 +331,10 @@ mark {
     padding: 5px 20px;
     width: 100%;
   }
-  .navigation {
+  .navigation{
+    display: none;
+  }
+  .navigation.open {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -321,7 +342,7 @@ mark {
     font-size: 26px;
   }
   .navigation_item{
-    padding-top: 15px;
+    padding: 15px;
   }
   .projects_gallery{
     justify-content:space-around;
