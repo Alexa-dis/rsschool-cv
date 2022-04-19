@@ -43,7 +43,7 @@ a {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .cv_left {
@@ -62,6 +62,15 @@ a {
   padding: 10px 25px 0 25px;
 }
 
+.cv_content li {
+  font-size: 20px;
+  padding: 2px 0;
+}
+
+.cv_content .cv_item {
+  padding-bottom: 5px;
+}
+
 .cv_item {
   font-weight: 500;
   font-size: 18px;
@@ -72,6 +81,7 @@ a {
 .regular {
   text-transform: none;
 }
+
 
 .cv_right {
   display: block;
@@ -164,6 +174,7 @@ a {
   font-size: 17px;
   line-height: 1.4rem;
   color: #30727a;
+  text-align: justify;
 }
 
 .project_line {
